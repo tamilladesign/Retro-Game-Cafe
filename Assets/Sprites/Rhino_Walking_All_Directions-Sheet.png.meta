@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 51ba41534406c4846b9042c4265e0878
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4141244691588278516
+    second: Rhino_Walking_All_Directions-Sheet_0
+  - first:
+      213: -4999294052348074103
+    second: Rhino_Walking_All_Directions-Sheet_1
+  - first:
+      213: 9026584355075530205
+    second: Rhino_Walking_All_Directions-Sheet_2
+  - first:
+      213: 6648679289080758044
+    second: Rhino_Walking_All_Directions-Sheet_3
+  - first:
+      213: -4826219389055281473
+    second: Rhino_Walking_All_Directions-Sheet_4
+  - first:
+      213: 8773577990422901144
+    second: Rhino_Walking_All_Directions-Sheet_5
+  - first:
+      213: -6396450741564700255
+    second: Rhino_Walking_All_Directions-Sheet_6
+  - first:
+      213: 8533233168190912855
+    second: Rhino_Walking_All_Directions-Sheet_7
+  - first:
+      213: -3212619137374656331
+    second: Rhino_Walking_All_Directions-Sheet_8
+  - first:
+      213: 4576281213836817530
+    second: Rhino_Walking_All_Directions-Sheet_9
+  - first:
+      213: -4767415535493283592
+    second: Rhino_Walking_All_Directions-Sheet_10
+  - first:
+      213: 7274939631542417171
+    second: Rhino_Walking_All_Directions-Sheet_11
+  - first:
+      213: -8951053222285602094
+    second: Rhino_Walking_All_Directions-Sheet_12
+  - first:
+      213: -7079615349209299877
+    second: Rhino_Walking_All_Directions-Sheet_13
+  - first:
+      213: -1184445307613912202
+    second: Rhino_Walking_All_Directions-Sheet_14
+  - first:
+      213: 6868418870120062022
+    second: Rhino_Walking_All_Directions-Sheet_15
+  - first:
+      213: -9188205672449759084
+    second: Rhino_Walking_All_Directions-Sheet_16
+  - first:
+      213: 8427437785458742858
+    second: Rhino_Walking_All_Directions-Sheet_17
+  - first:
+      213: 7904859220235365852
+    second: Rhino_Walking_All_Directions-Sheet_18
+  - first:
+      213: 6787808734716843998
+    second: Rhino_Walking_All_Directions-Sheet_19
+  - first:
+      213: -780343341651553467
+    second: Rhino_Walking_All_Directions-Sheet_20
+  - first:
+      213: -359193811195753338
+    second: Rhino_Walking_All_Directions-Sheet_21
+  - first:
+      213: -8318405163520846704
+    second: Rhino_Walking_All_Directions-Sheet_22
+  - first:
+      213: -8176119229615416928
+    second: Rhino_Walking_All_Directions-Sheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 160
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f867121b18a87930800000000000000
+      internalID: 4141244691588278516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 161
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987e11afb80fe9ab0800000000000000
+      internalID: -4999294052348074103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 160
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd106365aed44d70800000000000000
+      internalID: 9026584355075530205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 160
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fb723569ad44c50800000000000000
+      internalID: 6648679289080758044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6d14b3903d50db0800000000000000
+      internalID: -4826219389055281473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 129
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891b758a2b202c970800000000000000
+      internalID: 8773577990422901144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 128
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a980cdb0fd3b37a0800000000000000
+      internalID: -6396450741564700255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 128
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759b99ffa522c6670800000000000000
+      internalID: 8533233168190912855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8692e6aeb7a63d0800000000000000
+      internalID: -3212619137374656331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 97
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74790f8487328f30800000000000000
+      internalID: 4576281213836817530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 96
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f08e3e44dcb6ddb0800000000000000
+      internalID: -4767415535493283592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 96
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3173f74fc07c5f460800000000000000
+      internalID: 7274939631542417171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d21d00e48877c380800000000000000
+      internalID: -8951053222285602094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 65
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b540afb695720cd90800000000000000
+      internalID: -7079615349209299877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 64
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6736bc7a441009fe0800000000000000
+      internalID: -1184445307613912202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 64
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c981a6296815f50800000000000000
+      internalID: 6868418870120062022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49827624f9fec7080800000000000000
+      internalID: -9188205672449759084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 33
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4619f0f30644f470800000000000000
+      internalID: 8427437785458742858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 32
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdda99d3493b3bd60800000000000000
+      internalID: 7904859220235365852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 32
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed75714b414233e50800000000000000
+      internalID: 6787808734716843998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543940e7dd9ab25f0800000000000000
+      internalID: -780343341651553467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c882eb123e30bf0800000000000000
+      internalID: -359193811195753338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094909a93961f8c80800000000000000
+      internalID: -8318405163520846704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhino_Walking_All_Directions-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9588d21e6988e80800000000000000
+      internalID: -8176119229615416928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rhino_Walking_All_Directions-Sheet_0: 4141244691588278516
+      Rhino_Walking_All_Directions-Sheet_1: -4999294052348074103
+      Rhino_Walking_All_Directions-Sheet_10: -4767415535493283592
+      Rhino_Walking_All_Directions-Sheet_11: 7274939631542417171
+      Rhino_Walking_All_Directions-Sheet_12: -8951053222285602094
+      Rhino_Walking_All_Directions-Sheet_13: -7079615349209299877
+      Rhino_Walking_All_Directions-Sheet_14: -1184445307613912202
+      Rhino_Walking_All_Directions-Sheet_15: 6868418870120062022
+      Rhino_Walking_All_Directions-Sheet_16: -9188205672449759084
+      Rhino_Walking_All_Directions-Sheet_17: 8427437785458742858
+      Rhino_Walking_All_Directions-Sheet_18: 7904859220235365852
+      Rhino_Walking_All_Directions-Sheet_19: 6787808734716843998
+      Rhino_Walking_All_Directions-Sheet_2: 9026584355075530205
+      Rhino_Walking_All_Directions-Sheet_20: -780343341651553467
+      Rhino_Walking_All_Directions-Sheet_21: -359193811195753338
+      Rhino_Walking_All_Directions-Sheet_22: -8318405163520846704
+      Rhino_Walking_All_Directions-Sheet_23: -8176119229615416928
+      Rhino_Walking_All_Directions-Sheet_3: 6648679289080758044
+      Rhino_Walking_All_Directions-Sheet_4: -4826219389055281473
+      Rhino_Walking_All_Directions-Sheet_5: 8773577990422901144
+      Rhino_Walking_All_Directions-Sheet_6: -6396450741564700255
+      Rhino_Walking_All_Directions-Sheet_7: 8533233168190912855
+      Rhino_Walking_All_Directions-Sheet_8: -3212619137374656331
+      Rhino_Walking_All_Directions-Sheet_9: 4576281213836817530
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
