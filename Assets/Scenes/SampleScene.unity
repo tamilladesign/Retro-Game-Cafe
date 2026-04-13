@@ -474,6 +474,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
+--- !u!1 &1003540133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4898177934314569795, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
+  m_PrefabInstance: {fileID: 828379702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1112859720
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466499981}
   - component: {fileID: 1466499980}
+  - component: {fileID: 1466499982}
   m_Layer: 0
   m_Name: Sofia
   m_TagString: Untagged
@@ -564,6 +570,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1466499982
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466499979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca6424f9b2378e74793a253389767d23, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1859898415
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +621,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bdfa5b2ebcd662468e76f7ccaa4b9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CustomerSpawner
-  customerPrefabs: []
+  customerPrefabs:
+  - {fileID: 1003540133}
+  - {fileID: 7929768819066218609, guid: ec6d70803860aad49a5bcb3f783bab15, type: 3}
+  - {fileID: 4235191500601342152, guid: b6c6c743039dd7a47ae728a0c0d2c6f3, type: 3}
+  spawnInterval: 5
 --- !u!4 &1859898417
 Transform:
   m_ObjectHideFlags: 0
