@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &329611048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329611049}
+  m_Layer: 0
+  m_Name: Entrance
+  m_TagString: Entrance
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329611049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329611048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.75, y: -7.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,20 +380,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.12
+      value: -8.5
       objectReference: {fileID: 0}
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.17
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -400,10 +423,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueArcadeFixed
       objectReference: {fileID: 0}
-    - target: {fileID: 8375626473046857889, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
-      propertyPath: m_TagString
-      value: ArcadeMachine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -422,20 +441,12 @@ PrefabInstance:
       value: SofiaIdleFront
       objectReference: {fileID: 0}
     - target: {fileID: 8720033417354638216, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720033417354638216, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720033417354638216, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8720033417354638216, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.95
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8720033417354638216, guid: 46e507137c6401b4f947fe3a75b3d7d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -489,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1112859722}
   - component: {fileID: 1112859721}
+  - component: {fileID: 1112859723}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -524,6 +536,18 @@ Transform:
   - {fileID: 1921863871}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1112859723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112859720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736708c052ba50f4c9f8c0e128bfbdfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridMap
 --- !u!1 &1466499979
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +557,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1466499981}
-  - component: {fileID: 1466499980}
   - component: {fileID: 1466499982}
   m_Layer: 0
   m_Name: Sofia
@@ -542,19 +565,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1466499980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466499979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 251f1c3a4d344ec4183e6c7edb663aa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomerMovement
-  animationPrefabs: []
 --- !u!4 &1466499981
 Transform:
   m_ObjectHideFlags: 0
@@ -616,7 +626,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859898415}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bdfa5b2ebcd662468e76f7ccaa4b9ca, type: 3}
   m_Name: 
@@ -3223,3 +3233,4 @@ SceneRoots:
   - {fileID: 828379702}
   - {fileID: 1859898417}
   - {fileID: 1466499981}
+  - {fileID: 329611049}
