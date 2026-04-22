@@ -20,4 +20,9 @@ public class ArcadeMachineBehavior : CustomerDesireable
     {
         
     }
+
+    public void Play() // plays animation of arcade machine being played.
+    {
+
+    }
 }

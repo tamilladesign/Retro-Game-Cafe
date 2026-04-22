@@ -12,7 +12,11 @@ public class GridMap : MonoBehaviour
     public Vector3 SnappedToGrid(Vector3 position)
     {
         Vector3Int gridPosition = grid.WorldToCell(position);
-        return grid.CellToWorld(gridPosition);
+        Vector3 snappedPosition = grid.CellToWorld(gridPosition);
+        snappedPosition.x += grid.cellSize.x / 2.0f;
+        snappedPosition.y += grid.cellSize.y / 2.0f;
+
+        return snappedPosition;
     }
 
     public Queue<Vector3> FindPathOnGrid(Vector3 startPos,  Vector3 endPos)
