@@ -21,19 +21,20 @@ public class CustomerMovement : MonoBehaviour
         }
     }
 
-    private List<CustomerDesire> desires;
+    private List<CustomerDesire> desires; // actually, maybe this could be a priority queue or something. We'll figure that out at some point.
+    private CustomerDesire currentDesire;
     #endregion
 
     #region Movement Information
+
     private GridMap MovementGrid;
     public int MovementSpeed = 2; // in cells/second
 
-    private float movementTimer;
-    private float timeBetweenMoves;
-    private Queue<Vector3> pathToCurrentTarget;
+    private Queue<Vector3> pathToCurrentDesire;
+
     #endregion
 
-    private Coroutine currentAction;
+    private Coroutine currentAction; // we'll store our currently running coroutine here
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,42 +49,54 @@ public class CustomerMovement : MonoBehaviour
 
         // get map information
         MovementGrid = FindFirstObjectByType<GridMap>();
-
-        // initialize movement info
-        timeBetweenMoves = 1.0f / MovementSpeed;
-        movementTimer = timeBetweenMoves;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // find target destination (this is super unoptimized but we'll fix that later)
-        CustomerDesire currentDesire = desires.Find((x) => { return !x.satisfied; });
-        Vector3 target = GameObject.FindWithTag("Entrance").transform.position;
-        if (currentDesire != null)
+        if(currentDesire == null)
         {
-            target = currentDesire.desire.GetInteractionPosition();
-        }
-        
-        // snap target location to grid
-        target = MovementGrid.SnappedToGrid(target);
-
-        // move to destination
-        if(pathToCurrentTarget == null) // first get a path if we don't have one yet
-        {
-            pathToCurrentTarget = MovementGrid.FindPathOnGrid(transform.position, target);
-        }
-        else if(pathToCurrentTarget.Count > 0) // if we haven't emptied our path
-        {
-            if(currentAction == null) // next, dequeue the first point in the path and start moving there.
+            // find what we want to do (this is super unoptimized but we'll fix that later)
+            // this is where we'd look through the list of possible things to do and pick something
+            currentDesire = desires.Find((x) => { return !x.satisfied; });
+            
+            
+            if(currentDesire == null) // if nothing satisfactory is found
             {
-                Vector3 currentTargetPosition = pathToCurrentTarget.Dequeue();
+                currentDesire = new CustomerDesire(FindFirstObjectByType<Exit>()); // get out of here
+            }
+        }
+
+        if(currentDesire == null) // just to catch an empty situation
+        {
+            return;
+        }
+
+        // here we execute moving to the destination
+        if (pathToCurrentDesire == null) // first get a path if we don't have one yet
+        {
+            Vector3 target = currentDesire.desire.GetInteractionPosition();
+
+            // snap target location to grid
+            target = MovementGrid.SnappedToGrid(target);
+            // find path to our target
+            pathToCurrentDesire = MovementGrid.FindPathOnGrid(transform.position, target);
+        }
+        else if (pathToCurrentDesire.Count > 0) // we have a path and it's not yet empty
+        {
+            if (currentAction == null) // next, dequeue the first point in the path and start moving there.
+            {
+                Vector3 currentTargetPosition = pathToCurrentDesire.Dequeue();
                 currentAction = StartCoroutine(MoveTowardsTarget(currentTargetPosition)); // we set this so it's called only once for this target
             }
         }
-        else if(currentAction == null) // here we'll handle selecting our next action. Or something. But for now it's gonna be just unsetting pathToCurrentTarget.
+        else if (currentAction == null) // here we'll handle selecting our next action. Or something. But for now it's gonna be just unsetting pathToCurrentTarget.
         {
-            pathToCurrentTarget = null;
+            pathToCurrentDesire = null;
+
+            // set that we're done with this task
+            currentDesire.satisfied = true;
+            currentDesire = null;
         }
     }
 
