@@ -23,6 +23,7 @@ public class CustomerMovement : MonoBehaviour
 
     private List<CustomerDesire> desires; // actually, maybe this could be a priority queue or something. We'll figure that out at some point.
     private CustomerDesire currentDesire;
+    private float patience = 15;
     #endregion
 
     #region Movement Information
@@ -65,6 +66,7 @@ public class CustomerMovement : MonoBehaviour
             {
                 currentDesire = new CustomerDesire(FindFirstObjectByType<Exit>()); // get out of here
             }
+            GetComponent<SpriteRenderer>().color = Color.white;
         }
 
         if(currentDesire == null) // just to catch an empty situation
@@ -73,7 +75,7 @@ public class CustomerMovement : MonoBehaviour
         }
 
         // here we execute moving to the destination
-        if (pathToCurrentDesire == null) // first get a path if we don't have one yet
+        if (pathToCurrentDesire == null && currentAction == null) // first get a path if we don't have one yet
         {
             Vector3 target = currentDesire.desire.GetInteractionPosition();
 
@@ -90,13 +92,26 @@ public class CustomerMovement : MonoBehaviour
                 currentAction = StartCoroutine(MoveTowardsTarget(currentTargetPosition)); // we set this so it's called only once for this target
             }
         }
-        else if (currentAction == null) // here we'll handle selecting our next action. Or something. But for now it's gonna be just unsetting pathToCurrentTarget.
+        else if (currentAction == null) // we have reached our destination
         {
             pathToCurrentDesire = null;
 
-            // set that we're done with this task
-            currentDesire.satisfied = true;
-            currentDesire = null;
+            // This is where we execute doing the task.
+            if(currentDesire.desire.CanInteractNow())
+            {
+                currentAction = StartCoroutine(Interact(currentDesire.desire));
+            }
+            else
+            {
+                patience -= Time.deltaTime;
+                //TEMP CODE
+                GetComponent<SpriteRenderer>().color = Color.tomato;
+            }
+        }
+
+        if(patience <= 0)
+        {
+            desires.Clear(); // we don't want anything anymore
         }
     }
 
@@ -111,5 +126,23 @@ public class CustomerMovement : MonoBehaviour
         transform.position = target;
         
         currentAction = null; // clear this so we can move to the next path
+    }
+
+    IEnumerator Interact(CustomerDesireable desireable)
+    {
+        //TEMP CODE
+        GetComponent<SpriteRenderer>().color = Color.white;
+
+        desireable.Interact(this); // start interaction
+
+        yield return new WaitForSeconds(desireable.InteractionTime); // wait for the interaction to finish
+
+        desireable.DoneInteracting(); // end interaction
+
+        // set that we're done with this task
+        currentDesire.satisfied = true;
+        currentDesire = null;
+
+        currentAction = null;
     }
 }

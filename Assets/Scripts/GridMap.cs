@@ -5,9 +5,12 @@ using static UnityEngine.GraphicsBuffer;
 public class GridMap : MonoBehaviour
 {
     private Grid grid;
+    private List<Vector2Int> obstacles;
+
     private void Awake()
     {
         grid = GetComponent<Grid>();
+        obstacles = new List<Vector2Int>();
     }
     public Vector3 SnappedToGrid(Vector3 position)
     {
