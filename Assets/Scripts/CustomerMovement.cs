@@ -23,13 +23,14 @@ public class CustomerMovement : MonoBehaviour
 
     private List<CustomerDesire> desires; // actually, maybe this could be a priority queue or something. We'll figure that out at some point.
     private CustomerDesire currentDesire;
-    private float patience = 15;
+    private float patience;
     #endregion
 
     #region Movement Information
 
     private GridMap MovementGrid;
     public int MovementSpeed = 2; // in cells/second
+    public float MaxPatience;
 
     private Queue<Vector3> pathToCurrentDesire;
 
@@ -50,6 +51,8 @@ public class CustomerMovement : MonoBehaviour
 
         // get map information
         MovementGrid = FindFirstObjectByType<GridMap>();
+
+        patience = MaxPatience;
     }
 
     // Update is called once per frame
@@ -66,6 +69,8 @@ public class CustomerMovement : MonoBehaviour
             {
                 currentDesire = new CustomerDesire(FindFirstObjectByType<Exit>()); // get out of here
             }
+
+            //TEMP CODE
             GetComponent<SpriteRenderer>().color = Color.white;
         }
 
@@ -86,7 +91,7 @@ public class CustomerMovement : MonoBehaviour
         }
         else if (pathToCurrentDesire.Count > 0) // we have a path and it's not yet empty
         {
-            if (currentAction == null) // next, dequeue the first point in the path and start moving there.
+            if (currentAction == null) // dequeue the next point in the path and start moving there.
             {
                 Vector3 currentTargetPosition = pathToCurrentDesire.Dequeue();
                 currentAction = StartCoroutine(MoveTowardsTarget(currentTargetPosition)); // we set this so it's called only once for this target
@@ -104,6 +109,7 @@ public class CustomerMovement : MonoBehaviour
             else
             {
                 patience -= Time.deltaTime;
+
                 //TEMP CODE
                 GetComponent<SpriteRenderer>().color = Color.tomato;
             }
@@ -137,7 +143,11 @@ public class CustomerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(desireable.InteractionTime); // wait for the interaction to finish
 
-        desireable.DoneInteracting(); // end interaction
+        float coinsSpent = desireable.DoneInteracting(); // end interaction
+
+        // Update coins for player.
+        coinsSpent = coinsSpent * (patience / MaxPatience); // we'll scale the coins this machine gave by how much we've had to wait.
+        PlayerStats.AddCoins((int)Mathf.Round(coinsSpent)); // then round that to the nearest in and say that's how much we got.
 
         // set that we're done with this task
         currentDesire.satisfied = true;

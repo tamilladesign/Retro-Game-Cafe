@@ -7,9 +7,9 @@ public class Exit : CustomerDesireable
         return true;
     }
 
-    public override void DoneInteracting()
+    public override int DoneInteracting()
     {
-        return;
+        return 0;
     }
 
     public override Vector3 GetInteractionPosition()

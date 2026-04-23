@@ -60,10 +60,12 @@ public class ArcadeMachineBehavior : CustomerDesireable
         return !IsOccupied && itemState == ItemState.FIXED;
     }
 
-    public override void DoneInteracting()
+    public override int DoneInteracting()
     {
         IsOccupied = false;
 
         timeToBreakDown = Mathf.Clamp(timeToBreakDown - 1, 0, BreakDownTime);
+
+        return MaximumCost;
     }
 }

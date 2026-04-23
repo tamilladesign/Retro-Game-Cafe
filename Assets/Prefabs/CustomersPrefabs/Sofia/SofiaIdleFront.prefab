@@ -129,3 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomerMovement
   animationPrefabs: []
   MovementSpeed: 2
+  MaxPatience: 15
