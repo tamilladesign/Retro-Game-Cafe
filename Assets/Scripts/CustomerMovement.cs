@@ -7,6 +7,7 @@ using System.Collections;
 public class CustomerMovement : MonoBehaviour
 {
     public GameObject[] animationPrefabs;
+    
 
     #region AI and state information
     private class CustomerDesire
@@ -41,6 +42,7 @@ public class CustomerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         // initialize customer desires
         ArcadeMachineBehavior[] machines = FindObjectsByType<ArcadeMachineBehavior>(FindObjectsSortMode.None); // none for now, we'll sort by interest or something later
         desires = new List<CustomerDesire>();
