@@ -6,6 +6,7 @@ using System.Collections;
 
 public class CustomerMovement : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public GameObject[] animationPrefabs;
     
 
@@ -38,6 +39,9 @@ public class CustomerMovement : MonoBehaviour
     #endregion
 
     private Coroutine currentAction; // we'll store our currently running coroutine here
+=======
+    public float speed = 3f;
+>>>>>>> Stashed changes
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
