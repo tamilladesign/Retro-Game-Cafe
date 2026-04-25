@@ -157,4 +157,17 @@ public class CustomerMovement : MonoBehaviour
 
         currentAction = null;
     }
+
+    private void OnDrawGizmos()
+    {
+        if(pathToCurrentDesire.Count > 0)
+        {
+            Vector3[] path = pathToCurrentDesire.ToArray();
+            for(int i = 0; i < path.Length - 1; i++)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawLine(path[i], path[i+1]);
+            }    
+        }
+    }
 }

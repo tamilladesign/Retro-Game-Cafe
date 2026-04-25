@@ -29,4 +29,11 @@ public abstract class CustomerDesireable : MonoBehaviour
     public abstract float Interact(MonoBehaviour interactor); // Runs on successful interaction, returns interaction time
     public abstract int DoneInteracting(); // returns the number of coins given by completing this interaction
     public abstract bool CanInteractNow();
+
+    private void OnDrawGizmos()
+    {
+        Vector3 position = GetInteractionPosition();
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(position, new Vector3(0.5f, 0.5f));
+    }
 }

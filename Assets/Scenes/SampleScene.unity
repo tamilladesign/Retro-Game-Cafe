@@ -1340,11 +1340,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.5
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1957,6 +1957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736708c052ba50f4c9f8c0e128bfbdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridMap
+  DrawGizmos: 1
 --- !u!1 &1131440393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,11 +2963,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.55
+      value: 5.96
       objectReference: {fileID: 0}
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.81
+      value: -2.42
       objectReference: {fileID: 0}
     - target: {fileID: 146729122732527601, guid: 45928f869a68e8649bde238e1b0319a8, type: 3}
       propertyPath: m_LocalPosition.z
