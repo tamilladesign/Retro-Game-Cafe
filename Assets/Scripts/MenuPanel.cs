@@ -1,4 +1,6 @@
+using Unity.VectorGraphics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuPanel : MonoBehaviour
 {
@@ -19,5 +21,10 @@ public class MenuPanel : MonoBehaviour
         {
             menuPanel.SetActive(false);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
