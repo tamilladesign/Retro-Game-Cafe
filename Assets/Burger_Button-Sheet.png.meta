@@ -122,7 +122,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 24, z: 4, w: 5}
       customData: 
       outline: []
       physicsShape: []
@@ -144,14 +144,14 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 21, z: 4, w: 8}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c82f2849100564aa9fdd9588157b2c
-      internalID: 427074000
+      spriteID: fe4ebec841580af40b8920a2b10992ad
+      internalID: 771702948
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5f4bf1599b9683045a1387940ba4d0b5
+    spriteID: cff3bbb47ce69394f918d793480a4392
     internalID: 0
     vertices: []
     indices: 
@@ -173,7 +173,7 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Burger_Button-Sheet_0: 7629731954281171384
-      Burger_Button-Sheet_1: 427074000
+      Burger_Button-Sheet_1: 771702948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
