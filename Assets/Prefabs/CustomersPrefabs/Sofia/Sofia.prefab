@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomerMovement
   animationPrefabs: []
   MovementSpeed: 2
-  MaxPatience: 0
+  MaxPatience: 10
 --- !u!212 &96176039884261332
 SpriteRenderer:
   serializedVersion: 2
