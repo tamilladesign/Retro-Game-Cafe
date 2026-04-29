@@ -30,19 +30,27 @@ public class GridMap : MonoBehaviour
     public void UpdateNavInfo()
     {
         CustomerDesireable[] allInteractibles = FindObjectsByType<CustomerDesireable>(FindObjectsSortMode.None);
-        obstacles.Clear();
-        for(int i = 0;  i < allInteractibles.Length; i++)
+        if(obstacles != null)
+        {
+            obstacles.Clear();
+        }
+        else
+        {
+            obstacles = new List<Vector3Int> ();
+        }
+
+        for (int i = 0; i < allInteractibles.Length; i++)
         {
             // find bounds of the object
             Bounds objectBounds;
             SpriteRenderer spriteRenderer;
             allInteractibles[i].TryGetComponent<SpriteRenderer>(out spriteRenderer);
-            if(spriteRenderer == null) continue;
+            if (spriteRenderer == null) continue;
 
             objectBounds = spriteRenderer.bounds;
-            for(float y = objectBounds.min.y; y < objectBounds.max.y; y += grid.cellSize.y)
+            for (float y = objectBounds.min.y; y < objectBounds.max.y; y += grid.cellSize.y)
             {
-                for(float x = objectBounds.min.x; x < objectBounds.max.x; x += grid.cellSize.x)
+                for (float x = objectBounds.min.x; x < objectBounds.max.x; x += grid.cellSize.x)
                 {
                     Vector3Int currentPoint = grid.WorldToCell(new Vector3(x, y, 0));
                     // add every point within the bounds of the object
@@ -198,6 +206,11 @@ public class GridMap : MonoBehaviour
         if (DrawGizmos)
         {
             grid = GetComponent<Grid>();
+            if (grid == null)
+            {
+                return;
+            }
+
             UpdateNavInfo();
             for (int i = 0; i < obstacles.Count; i++)
             {

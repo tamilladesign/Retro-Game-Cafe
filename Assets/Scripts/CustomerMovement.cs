@@ -91,7 +91,7 @@ public class CustomerMovement : MonoBehaviour
             // find path to our target
             pathToCurrentDesire = MovementGrid.FindPathOnGrid(transform.position, target);
         }
-        else if (pathToCurrentDesire.Count > 0) // we have a path and it's not yet empty
+        else if (pathToCurrentDesire != null && pathToCurrentDesire.Count > 0) // we have a path and it's not yet empty
         {
             if (currentAction == null) // dequeue the next point in the path and start moving there.
             {
@@ -160,6 +160,11 @@ public class CustomerMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if(pathToCurrentDesire == null)
+        {
+            return;
+        }
+
         if(pathToCurrentDesire.Count > 0)
         {
             Vector3[] path = pathToCurrentDesire.ToArray();
