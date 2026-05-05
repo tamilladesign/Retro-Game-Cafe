@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: ed498e1e724fa6542a3b5691d3a6dd61
+guid: faafe953f8304764cbd657cc6cb024b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5507455221174913402
-    second: Start_Button-Sheet_0
+      213: -4324584650645627930
+    second: Charging_Spot-Sheet_0
   - first:
-      213: 2349911020862072779
-    second: Start_Button-Sheet_1
+      213: 980140352848583076
+    second: Charging_Spot-Sheet_1
+  - first:
+      213: -4710053934387326008
+    second: Charging_Spot-Sheet_2
+  - first:
+      213: 3188838899455999924
+    second: Charging_Spot-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Start_Button-Sheet_0
+      name: Charging_Spot-Sheet_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 3
-        width: 130
-        height: 67
+        x: 1
+        y: 12
+        width: 30
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 686bf75f7a69193b0800000000000000
-      internalID: -5507455221174913402
+      spriteID: 6eb19214c2dfbf3c0800000000000000
+      internalID: -4324584650645627930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start_Button-Sheet_1
+      name: Charging_Spot-Sheet_1
       rect:
         serializedVersion: 2
-        x: 223
-        y: 3
-        width: 130
-        height: 67
+        x: 3
+        y: 1
+        width: 26
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +159,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc762448f9f8c9020800000000000000
-      internalID: 2349911020862072779
+      spriteID: 4a9d09935782a9d00800000000000000
+      internalID: 980140352848583076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_Spot-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 12
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c399efc6e682aeb0800000000000000
+      internalID: -4710053934387326008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charging_Spot-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfb5087518014c20800000000000000
+      internalID: 3188838899455999924
       vertices: []
       indices: 
       edges: []
@@ -173,8 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Start_Button-Sheet_0: -5507455221174913402
-      Start_Button-Sheet_1: 2349911020862072779
+      Charging_Spot-Sheet_0: -4324584650645627930
+      Charging_Spot-Sheet_1: 980140352848583076
+      Charging_Spot-Sheet_2: -4710053934387326008
+      Charging_Spot-Sheet_3: 3188838899455999924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

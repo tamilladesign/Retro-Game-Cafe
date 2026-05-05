@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: ed498e1e724fa6542a3b5691d3a6dd61
+guid: 587cd2f81a6c1f642a1e2063f33523fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5507455221174913402
-    second: Start_Button-Sheet_0
+      213: -1835901089177879461
+    second: Restart_button-Sheet_0
   - first:
-      213: 2349911020862072779
-    second: Start_Button-Sheet_1
+      213: -1103870587752187653
+    second: Restart_button-Sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,12 +116,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Start_Button-Sheet_0
+      name: Restart_button-Sheet_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 3
-        width: 130
+        x: 15
+        y: 2
+        width: 161
         height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 686bf75f7a69193b0800000000000000
-      internalID: -5507455221174913402
+      spriteID: b5cbcc8bfa19586e0800000000000000
+      internalID: -1835901089177879461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Start_Button-Sheet_1
+      name: Restart_button-Sheet_1
       rect:
         serializedVersion: 2
-        x: 223
-        y: 3
-        width: 130
+        x: 207
+        y: 2
+        width: 161
         height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc762448f9f8c9020800000000000000
-      internalID: 2349911020862072779
+      spriteID: bf8770b8c834ea0f0800000000000000
+      internalID: -1103870587752187653
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Start_Button-Sheet_0: -5507455221174913402
-      Start_Button-Sheet_1: 2349911020862072779
+      Restart_button-Sheet_0: -1835901089177879461
+      Restart_button-Sheet_1: -1103870587752187653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

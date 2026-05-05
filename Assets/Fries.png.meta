@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: ed498e1e724fa6542a3b5691d3a6dd61
+guid: 5b1055a27469e4b46887350d2d37f786
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5507455221174913402
-    second: Start_Button-Sheet_0
-  - first:
-      213: 2349911020862072779
-    second: Start_Button-Sheet_1
+      213: -6406154281553637950
+    second: Fries_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Start_Button-Sheet_0
+      name: Fries_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 3
-        width: 130
-        height: 67
+        x: 6
+        y: 9
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 686bf75f7a69193b0800000000000000
-      internalID: -5507455221174913402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Start_Button-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 3
-        width: 130
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc762448f9f8c9020800000000000000
-      internalID: 2349911020862072779
+      spriteID: 2cdc5a74f94c817a0800000000000000
+      internalID: -6406154281553637950
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Start_Button-Sheet_0: -5507455221174913402
-      Start_Button-Sheet_1: 2349911020862072779
+      Fries_0: -6406154281553637950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
